@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mundo da Moda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>O Mundo da Moda</h1>
+        <p>Conheça um pouco mais sobre o universo da moda.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#estilos">Estilos</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>O que é moda?</h2>
+            <p>
+                A moda é uma forma de expressão que permite às pessoas
+                demonstrarem sua personalidade através das roupas,
+                acessórios e diferentes estilos.
+            </p>
+            <img src="modaimg.jpg"
+                 alt="Pessoas usando roupas de moda">
+        </section>
+
+        <section id="estilos">
+            <h2>Estilos de moda</h2>
+
+            <h3>Casual</h3>
+            <p>Roupas confortáveis e simples para o dia a dia.</p>
+
+            <h3>Esportivo</h3>
+            <p>Peças voltadas para conforto e atividades físicas.</p>
+
+            <h3>Social</h3>
+            <p>Roupas mais formais, utilizadas em eventos e ambientes profissionais.</p>
+
+            <h3>Streetwear</h3>
+            <p>Estilo urbano que mistura conforto, criatividade e personalidade.</p>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Curiosidades sobre moda</h2>
+            <p id="curiosidade">Clique no botão para descobrir uma curiosidade!</p>
+            <button onclick="mostrarCuriosidade()">Ver curiosidade</button>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz sobre moda</h2>
+            <p>Qual estilo é conhecido por suas roupas urbanas?</p>
+
+            <button onclick="verificarResposta('casual')">Casual</button>
+            <button onclick="verificarResposta('streetwear')">Streetwear</button>
+            <button onclick="verificarResposta('social')">Social</button>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de Desenvolvimento Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
